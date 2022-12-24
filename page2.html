@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validate</title>
+    <style>
+        body {
+            background-color: rgb(176, 176, 240);
+
+        }
+
+        .navbar {
+            background-color: rgb(249, 158, 158);
+            border-radius: 30px;
+            border: 2px solid black;
+            font-size: large;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            padding: 1px 1px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .search {
+            float: right;
+            color: aliceblue;
+            padding: 12px 75px;
+        }
+
+        .regdiv {
+            text-align: center;
+        }
+
+        .formdiv {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">KNOW MORE</a></li>
+                <div class="search">
+                    <input type="text" name="seach" id="seach" placeholder="seach this site">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="regdiv">
+
+
+        <h2> <u>Registtration Form</u></h2>
+    </div>
+    <div class="formdiv">
+        <form class="forms" action="/form/submit" method="get">
+            FIRST NAME:<br>
+            <input type="text" name="first_name" required> <br>
+            MIDDLE NAME:<br>
+            <input type="text" name="first_name" required><br>
+            LAST NAME:<br>
+            <input type="text" name="first_name" required> <br>
+            BIRTH DATE:<br>
+            <input type="date" name="birth_dATE" required><br>
+            CONTACT NUMVER:<br>
+            <select>
+                <option data-countrycode="IN" value="91"> INDIA(+91)</option>
+                <option data-countrycode="ID" value="62"> INDONESIA(+62)</option>
+                <option data-countrycode="IRAN" value="98"> IRAN(+98)</option>
+                <option data-countrycode="IN" value="91"> INDIA(+91)</option>
+                <option data-countrycode="ID" value="62"> INDONESIA(+62)</option>
+                <option data-countrycode="IRAN" value="98"> IRAN(+98)</option>
+                <option data-countrycode="IN" value="91"> INDIA(+91)</option>
+                <option data-countrycode="ID" value="62"> INDONESIA(+62)</option>
+                <option data-countrycode="IRAN" value="98"> IRAN(+98)</option>
+            </select><BR>
+            <input type="tel" name="number" required><br>
+            EMAIL ID:<br>
+            <input type="text" name="email_id" required><br>
+            PASSWORD:<br>
+            <input type="password" name="password" required><br>
+            ADDRESS:<br>
+            <textarea rows="4" cols="15" required></textarea><br>
+            COUNTRY:<br>
+            <select>
+                <option>INDIA</option>
+                <option>MAYNMAR</option>
+                <option>PAKISTAN</option>
+                <option>BANGLADESH</option>
+                <option>NEPAL</option>
+                <option>BHUTAN</option>
+                <option>SHRI LANKA</option>
+                <option>INDIA</option>
+                <option>MAYNMAR</option>
+                <option>PAKISTAN</option>
+                <option>BANGLADESH</option>
+                <option>NEPAL</option>
+                <option>BHUTAN</option>
+                <option>SHRI LANKA</option>
+            </select><br>
+            GENDER:<br>
+            <lable>
+                <input type="radio" name="gender" value="male" required>MALE
+            </lable>
+            <lable>
+                <input type="radio" name="gender" value="female" required>FEMALE
+            </lable>
+            <lable>
+                <input type="radio" name="gender" value="other" required>OTHER
+            </lable><br>
+            <lable>
+                <input type="checkbox" name="noted" value="noted" required>I PROPERLY READ THE CONDITION OF <a
+                    href=www.google.com>THIS SITE</a>
+            </lable><br>
+            <lable>
+                <input type="checkbox" name="agee" value="agree" required>I AGREE TO THE TERMS AND THE CONDITION OF <a
+                    href=www.google.com>THIS SITE</a>
+            </lable><br>
+            <input type="submit" name="REGISTER NOW">
+        </form>
+
+    </div>
+</body>
+
+</html>
