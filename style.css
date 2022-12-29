@@ -16,6 +16,7 @@ nav {
     background: #0c0d0e;
     height: 80px;
     width: 100%;
+    position:fixed;
 }
 
 label.logo {
